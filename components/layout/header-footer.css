@@ -1,0 +1,163 @@
+/* Header y Navegación */
+.main-header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #3498db;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* propuesta.html */
+:root {
+    --kinal-blue: #002147;  
+    --kinal-orange: #F15A24; 
+    --white: #ffffff;
+    --text-dark: #1d1d1f;
+}
+
+.main-header {
+    background: var(--white);
+    padding: 0 5%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor del Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.flame-icon {
+    font-size: 1.8rem;
+    background: rgba(241, 90, 36, 0.1);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--kinal-blue);
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+.tagline {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--kinal-orange);
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+/* Menú de Navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--kinal-orange);
+}
+
+/* Indicador de página activa */
+.nav-link.active {
+    color: var(--kinal-blue);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--kinal-orange);
+    border-radius: 10px;
+}
+
+/* Botón de Admisiones */
+.btn-enroll {
+    background: var(--kinal-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-enroll:hover {
+    background: var(--kinal-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(241, 90, 36, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; 
+    }
+}

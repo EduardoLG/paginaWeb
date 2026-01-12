@@ -1,0 +1,41 @@
+/* Botones reutilizables */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+.btn-primary {
+    background: var(--kinal-blue);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--kinal-orange);
+    box-shadow: 0 10px 20px rgba(241, 90, 36, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--kinal-blue);
+    padding: 18px 35px;
+    font-weight: 700;
+    border: 2px solid var(--kinal-blue);
+    border-radius: 12px;
+    margin-left: 15px;
+    cursor: pointer;
+}
