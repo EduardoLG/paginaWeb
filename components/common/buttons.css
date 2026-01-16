@@ -1,41 +1,48 @@
-/* Botones reutilizables */
-.btn-primary {
-    background-color: #3498db;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #2980b9;
-}
 .btn-primary {
     background: var(--kinal-blue);
     color: white;
-    padding: 18px 35px;
+    padding: 18px 40px; 
     border-radius: 12px;
     font-weight: 700;
+    font-size: 1.1rem; 
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
     background: var(--kinal-orange);
-    box-shadow: 0 10px 20px rgba(241, 90, 36, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(241, 90, 36, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
     color: var(--kinal-blue);
-    padding: 18px 35px;
+    padding: 16px 38px; 
     font-weight: 700;
-    border: 2px solid var(--kinal-blue);
+    font-size: 1.1rem;
+    border: 2px solid var(--kinal-blue); 
     border-radius: 12px;
-    margin-left: 15px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    border-color: var(--kinal-orange);
+    color: var(--kinal-orange);
+    background: rgba(241, 90, 36, 0.05);
+}
+.btn-enroll {
+    background: var(--kinal-blue);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
 }
